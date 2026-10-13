@@ -1,0 +1,22 @@
+/* The Company brand — shared by home, /bingo, future /translator */
+:root{--black:#0d0d0c;--ink:#1a1917;--white:#fff;--cream:#efe8dc;--cream-2:#e4dacb;--wood:#c9a97c;--wood-2:#b08d5f;--muted:#8a8478;
+--display:'Anton','Oswald','Bebas Neue',Impact,'Arial Narrow',sans-serif;--body:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--body);background:var(--cream);color:var(--black);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;height:auto;display:block}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.display,h1,h2,h3{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:.95}
+.tagline,.eyebrow,.micro{font-family:var(--body);font-weight:300;text-transform:uppercase;letter-spacing:.32em;font-size:.72rem}
+.rule{display:block;width:56px;height:1px;background:currentColor;opacity:.6}
+.logo{font-family:var(--display);font-size:1.5rem;text-decoration:none;letter-spacing:.02em}
+.logo span{font-size:.6em;vertical-align:super}
+.button{display:inline-flex;align-items:center;gap:.6em;font-family:var(--body);font-weight:600;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding:1em 1.6em;border:1px solid var(--black);background:var(--black);color:var(--cream);border-radius:0;cursor:pointer;transition:background .2s,color .2s}
+.button:hover{background:transparent;color:var(--black)}
+.button.outline{background:transparent;color:var(--black)}
+.button.outline:hover{background:var(--black);color:var(--cream)}
+.on-dark .button{background:var(--cream);color:var(--black);border-color:var(--cream)}
+.on-dark .button.outline{background:transparent;color:var(--cream)}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--black);color:var(--cream);padding:8px;z-index:99}
+.wood{background:repeating-linear-gradient(90deg,var(--wood) 0 10px,var(--wood-2) 10px 12px,#d6b98d 12px 22px,var(--wood-2) 22px 24px)}
