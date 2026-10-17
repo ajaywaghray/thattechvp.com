@@ -21,8 +21,8 @@ nav a:hover{text-decoration:underline}
 .results::after{content:"";position:absolute;right:0;top:0;bottom:0;width:22px;background:repeating-linear-gradient(90deg,#c9a97c 0 8px,#a8865a 8px 10px)}
 .section-top{display:flex;justify-content:space-between;gap:20px;padding-bottom:18px;border-bottom:1px solid currentColor;margin-bottom:46px;flex-wrap:wrap;opacity:.9}
 .micro{opacity:.7;letter-spacing:.22em}
-.metrics{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-.metrics strong{font-family:var(--display);font-weight:400;font-size:clamp(3.2rem,9vw,7.5rem);line-height:1;display:block}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.metrics strong{font-family:var(--display);font-weight:400;font-size:clamp(3.2rem,8vw,7.5rem);line-height:1;display:block}
 .metrics strong span{font-size:.4em;color:var(--wood);margin-left:.15em;vertical-align:top}
 .metrics h2{font-family:var(--body);font-weight:300;font-size:.8rem;letter-spacing:.34em;margin-top:14px;padding-top:14px;border-top:1px solid #efe8dc44;width:min(260px,100%)}
 .fine{font-size:.74rem;opacity:.6;margin-top:40px;max-width:720px;font-weight:300}
@@ -75,3 +75,10 @@ footer{padding:46px 0 30px}
  .partnerships article{border-right:0;margin-right:0;border-bottom:1px solid #0d0d0c22}
  .section,.results{padding:64px 0}.results::after{width:10px}
 }
+.brand-metrics{grid-template-columns:1fr 1fr}
+.brand-metrics h2{width:min(300px,100%);line-height:1.6}
+.audience-line{font-family:var(--display);text-transform:uppercase;font-size:clamp(1.5rem,3.4vw,2.6rem);line-height:1.05;margin-top:48px;max-width:900px}
+.audience-line i{font-style:normal;color:var(--wood);padding:0 .25em}
+.alltime-line{font-weight:300;text-transform:uppercase;letter-spacing:.32em;font-size:.78rem;margin-top:18px;color:var(--wood)}
+.alltime-line b{font-family:var(--display);font-weight:400;letter-spacing:.02em;font-size:1.6rem;color:var(--cream);margin-right:.35em;vertical-align:-.12em}
+@media(max-width:760px){.brand-metrics{grid-template-columns:1fr}}
